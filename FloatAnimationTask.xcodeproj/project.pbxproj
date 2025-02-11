@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0B1D3E2D5A3AB100B3DA1A /* FloatAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B1D3D2D5A3AA300B3DA1A /* FloatAnimationModifier.swift */; };
 		2CC1BF5E2D55D951000650D2 /* FloatAnimationTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1BF5D2D55D951000650D2 /* FloatAnimationTaskApp.swift */; };
 		2CC1BF602D55D951000650D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1BF5F2D55D951000650D2 /* ContentView.swift */; };
 		2CC1BF622D55D952000650D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC1BF612D55D952000650D2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0B1D3D2D5A3AA300B3DA1A /* FloatAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatAnimationModifier.swift; sourceTree = "<group>"; };
 		2CC1BF5A2D55D951000650D2 /* FloatAnimationTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatAnimationTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC1BF5D2D55D951000650D2 /* FloatAnimationTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatAnimationTaskApp.swift; sourceTree = "<group>"; };
 		2CC1BF5F2D55D951000650D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				2CC1BF5D2D55D951000650D2 /* FloatAnimationTaskApp.swift */,
 				2CC1BF5F2D55D951000650D2 /* ContentView.swift */,
+				2C0B1D3D2D5A3AA300B3DA1A /* FloatAnimationModifier.swift */,
 				2CC1BF612D55D952000650D2 /* Assets.xcassets */,
 				2CC1BF632D55D952000650D2 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC1BF602D55D951000650D2 /* ContentView.swift in Sources */,
+				2C0B1D3E2D5A3AB100B3DA1A /* FloatAnimationModifier.swift in Sources */,
 				2CC1BF5E2D55D951000650D2 /* FloatAnimationTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

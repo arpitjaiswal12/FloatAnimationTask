@@ -8,6 +8,7 @@
 import CoreMotion
 import SwiftUI
 
+//MARK: Creating an class that handle device motion
 class MotionManager : ObservableObject {
     private let motionManager = CMMotionManager()
     @Published var x = 0.0
@@ -26,6 +27,7 @@ class MotionManager : ObservableObject {
     }
 }
 
+//MARK: create an view modifer which provide motion to view
 struct FloatAnimation : ViewModifier {
     @StateObject private var motion = MotionManager()
     var xThreshold : CGFloat
@@ -36,9 +38,6 @@ struct FloatAnimation : ViewModifier {
     }
     func body(content: Content) -> some View {
         content
-//            .background()
-//            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
-//            .shadow(radius: 20)
             .offset(
                 x: motion.x < 0 ? max(motion.x, -1.30) * xThreshold : motion.x > 0 ? min(motion.x, 1.30) * xThreshold : 0,
                 y: ((motion.y < 0 ? max(motion.y, -1.30) : motion.y > 0 ? min(motion.y, 1.30) : 0) * yThreshold * 1.5))
