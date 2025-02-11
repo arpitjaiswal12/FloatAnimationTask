@@ -48,7 +48,7 @@ struct FloatAnimation : ViewModifier {
 }
 
 extension View {
-    func floatAnimation(x : CGFloat, y: CGFloat) -> some View {
-        modifier(FloatAnimation(xThreshold: x, yThreshold: y))
+    func floatAnimation(thrershold : CGPoint) -> some View {
+        modifier(FloatAnimation(xThreshold: thrershold.x, yThreshold: thrershold.y))
     }
 }
