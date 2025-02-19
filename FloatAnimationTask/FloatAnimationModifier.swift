@@ -16,11 +16,11 @@ class MotionManager : ObservableObject {
     init() {
         if motionManager.isAccelerometerAvailable {
 //            motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
-            motionManager.startDeviceMotionUpdates(to: .main){ data, error in
+            motionManager.startDeviceMotionUpdates(to: .main) { [weak self] data, error in
                 guard let motion = data?.attitude else { return }
                 DispatchQueue.main.async {
-                    self.x = motion.roll
-                    self.y = motion.pitch
+                    self?.x = motion.roll
+                    self?.y = motion.pitch
                 }
             }
         }
